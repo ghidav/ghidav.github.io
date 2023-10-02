@@ -142,3 +142,66 @@ nav.navbar {
     background-color: #737373;  /* This is a light gray for the background. Adjust as needed. */
     color: #E0E0E0;  /* This is a light color for the text. Adjust as needed. */
 }
+
+[data-theme="dark"] .btn-outline-secondary {
+    color: var(--primary-text-color) !important;  /* This is a light color for the text. Adjust as needed. */
+}
+
+[data-theme="dark"] .btn-outline-dark {
+    border-color: #8C8C8C !important;  /* This is a light color for the text. Adjust as needed. */
+}
+
+[data-theme="dark"] .btn-outline-dark:hover {
+    background-color: #8C8C8C !important;  /* This is a light color for the text. Adjust as needed. */
+}
+
+[data-theme="dark"] .navbar-toggler {
+    background-color: #737373 !important;
+}
+
+@media (max-width: 768px) {  /* adjust breakpoint as needed */
+
+    .col-md-5, .col-md-7 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .col-md-8, .col-md-4 {
+        width: 100%;
+        text-align: center;
+    }
+
+    h2, h4 {
+        font-size: 1.5rem;
+    }
+
+    .col-md-7 p {
+        font-size: 16px;
+    }
+
+    .btn, .theme-icon {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    .col-md-5 {
+        margin-bottom: 20px;
+    }
+
+    .col-md-4 {
+        margin-top: 20px;
+    }
+
+    #themeToggle {
+        position: fixed; 
+        bottom: 10px; 
+        right: 10px;
+        z-index: 1000; /* make sure it's above other content */
+    }
+}
+
+img.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
