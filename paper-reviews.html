@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davide's Academic Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><b>DG</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="paper-reviews.html">Paper Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blogposts.html">Blogposts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="volunteering.html">Volunteering</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="resources/cv.pdf">CV</a>
+        </li>
+      </ul>
+      <div class="ml-auto">
+        <div id="themeToggle" class="theme-icon">
+            <i class="far fa-sun"></i>
+        </div>
+    </div>
+    </div>
+  </nav>
+
+<!-- Paper Reviews Content -->
+<div class="container my-5">
+
+    <!-- Title and Brief Description -->
+    <header class="mb-4">
+        <h1>📑 Paper Reviews</h1>
+        <p>
+            A brief description about the purpose of this section, your methodology for reviewing, or any other information you'd like visitors to know before they delve into the reviews.
+        </p>
+    </header>
+    
+    <!-- Search Box -->
+    <div class="mb-4">
+        <div class="input-group">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search for articles...">
+            <div class="input-group-append">
+                <button id="clearSearch" class="btn btn-outline-secondary" type="button">X</button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Table of Paper Reviews -->
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th class="col-md-4">Title</th>
+                <th class="col-md-4">Authors</th>
+                <th class="col-md-2">Publication Date</th>
+                <th class="col-md-2">Link to Review</th>
+            </tr>
+        </thead>
+        <tbody id="reviewsTable">
+            <!-- Example Row (Repeat for each article) -->
+            <tr>
+                <td>
+                    Attention Is All You Need <br>
+                    <a href="#" class="tag badge badge-primary" onclick="filterByTag('NLP')">NLP</a>
+                    <a href="#" class="tag badge badge-success" onclick="filterByTag('Alignment')">Alignment</a>
+                </td>
+                <td>Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin</td>
+                <td>Jan 2023</td>
+                <td><a href="link-to-review.html">Read Review</a> <br> <a href="link-to-review.html">Read Article</a></td>
+            </tr>
+            <!-- Add more rows as needed -->
+            <tr>
+                <td>
+                    YaRN: Efficient Context Window Extension of Large Language Models <br>
+                    <a href="#" class="tag badge badge-primary" onclick="filterByTag('NLP')">NLP</a>
+                    <a href="#" class="tag badge badge-warning" onclick="filterByTag('Optimization')">Optimization</a>
+                </td>
+                <td>Bowen Peng, Jeffrey Quesnelle, Honglu Fan, Enrico Shippole</td>
+                <td>Jan 2023</td>
+                <td><a href="link-to-review.html">Read Review</a> <br> <a href="link-to-review.html">Read Article</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Bootstrap JS, Popper.js, and Custom JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/reviewSearch.js"></script>
+<script src="js/theme.js"></script>
+
+</body>
+</html>

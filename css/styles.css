@@ -1,0 +1,144 @@
+/* Default Theme */
+:root {
+    --primary-bg-color: #FFFFFF; /* White */
+    --primary-text-color: #000000; /* Black */
+    --secondary-bg-color: #F5F5F5; /* Light Grey (for navbar and recent works) */
+    --secondary-text-color: #333333; /* Darker text color for contrast on light grey */
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --primary-bg-color: #121212; /* Near Black */
+    --primary-text-color: #FFFFFF; /* White */
+    --secondary-bg-color: #2D2D2D; /* Dark Grey */
+    --secondary-text-color: #E0E0E0; /* Lighter text color for contrast on dark grey */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: var(--secondary-bg-color) !important;
+}
+
+.navbar-brand {
+    color: var(--secondary-text-color) !important;
+}
+
+.navbar .nav-link {
+    color: var(--secondary-text-color) !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--primary-text-color) !important;
+}
+
+.bg-light {
+    background-color: var(--secondary-bg-color) !important;
+    color: var(--secondary-text-color) !important;
+}
+
+header {
+    text-align: center;
+}
+
+nav.navbar {
+    margin-bottom: 50px;
+}
+
+.col-md-5 > img {
+    width: 300px;
+    height: 300px;
+}
+
+.img-fluid.rounded-circle {
+    max-width: 70%; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for Bio */
+.col-md-7 h2 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.col-md-7 p {
+    font-size: 18px;
+}
+
+.tags {
+    padding-bottom: 20px;
+}
+
+.bio {
+    text-align: center;
+}
+
+.my-5 {
+    padding-bottom: 100px;
+}
+
+.py-5 .container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.theme-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--primary-text-color);
+    padding: 0 10px;
+}
+
+
+/* Style for Icons */
+[data-theme="dark"] .fa, [data-theme="dark"] .fab, [data-theme="dark"] .fas {
+    color: var(--secondary-text-color) !important;
+}
+
+/* Style for Table */
+[data-theme="dark"] .table thead th {
+    background-color: var(--secondary-bg-color) !important;
+    color: var(--primary-text-color) !important;
+}
+
+[data-theme="dark"] .table tbody tr:nth-child(odd) {
+    background-color: #2D2D2D !important;  /* or any color you want for odd rows */
+    color: var(--primary-text-color) !important;
+}
+
+[data-theme="dark"] .table tbody tr:nth-child(even) {
+    background-color: #3E3E3E !important;  /* or any color you want for even rows */
+    color: var(--primary-text-color) !important;
+}
+
+[data-theme="dark"] .card {
+    background-color: var(--secondary-bg-color) !important;
+    color: var(--primary-text-color) !important;
+}
+
+/* Style for Cards */
+[data-theme="dark"] .card a, [data-theme="dark"] .card a:hover {
+    color: var(--primary-text-color) !important;
+}
+
+/* Style for Search bar */
+[data-theme="dark"] input[type="text"] {
+    background-color: #2D2D2D !important; /* Darker than usual */
+    color: var(--primary-text-color) !important;
+    border-color: #3E3E3E !important;  /* Border a bit lighter than the background for contrast */
+}
+
+[data-theme="dark"] input[type="text"]::placeholder {
+    color: #8C8C8C;  /* This is a light gray. Adjust the color value as needed. */
+    opacity: 1;  /* This makes sure the color is applied as-is without any opacity */
+}
+
+[data-theme="dark"] .btn-dark {
+    background-color: #737373;  /* This is a light gray for the background. Adjust as needed. */
+    color: #E0E0E0;  /* This is a light color for the text. Adjust as needed. */
+}

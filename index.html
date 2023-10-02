@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davide's Academic Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> <!-- :wght@300 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><b>DG</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="paper-reviews.html">Paper Reviews</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blogposts.html">Blogposts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="volunteering.html">Volunteering</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="resources/cv.pdf">CV</a>
+      </li>
+    </ul>
+    <div class="ml-auto">
+        <div id="themeToggle" class="theme-icon">
+            <i class="far fa-sun"></i>
+        </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Home Content -->
+<div class="container my-5">
+    <div class="row align-items-center">
+        <!-- Profile Image -->
+        <div class="col-md-5">
+            <img src="resources/img/index/photo.jpg" alt="Your Name" class="img-fluid rounded-circle">
+        </div>
+        <!-- Bio -->
+        <div class="col-md-7">
+            <div class="bio">
+                <h2>👋🏼 Hi, I'm Davide Ghilardi!</h2>
+                I'm a MSc Data Science student and fellow researcher in NLP and EE at the <a href="https://inside.disco.unimib.it/">Insid&s Lab</a> at the University of Milano Bicocca. <br>
+                I'm a volunteer Machine Learning specialist at <a href="https://thegoodscientists.com/">The Good Scientists</a>. <br>
+                My academic interests include natural language processing, probabilistc machine learning, and recommendation systems.
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="mt-4 d-flex justify-content-center">
+                <a href="https://www.linkedin.com/in/davide-ghilardi-9407191a0" class="btn btn-outline-secondary mx-1" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/DavideGhilardi4" class="btn btn-outline-secondary mx-1" target="_blank">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://github.com/DvdGhl78" class="btn btn-outline-secondary mx-1" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.kaggle.com/your_username" class="btn btn-outline-secondary mx-1" target="_blank">
+                    <i class="fab fa-kaggle"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Recent Works Section -->
+<div class="bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Left Side: Title -->
+            <div class="col-md-4">
+                <h2><b>Recent Works</b></h2>
+            </div>
+            
+            <!-- Right Side: Works Content -->
+            <div class="col-md-8">
+                <!-- Work 1 -->
+                <div class="row mb-5">
+                    <!-- Title & Description -->
+                    <div class="col-md-8">
+                        <h4>📑 YaRN: Efficient Context Window Extension of Large Language Models</h4>
+                        <p>Rotary Position Embeddings (RoPE) have been shown to effectively encode positional information in transformer-based language models. However, these models fail to generalize past the sequence length they were trained on. We present YaRN...</p>
+                        <a href="link-to-blog-post.html" class="btn btn-sm btn-outline-secondary">Read Review</a>
+                    </div>
+                    <!-- Image -->
+                    <div class="col-md-4">
+                        <img src="resources/img/index/yarn.png" class="img-fluid" alt="Work 1">
+                    </div>
+                </div>
+
+                <!-- Work 2 -->
+                <div class="row mb-5">
+                    <!-- Title & Description -->
+                    <div class="col-md-8">
+                        <h4>📝 Why and how to achieve longer context windows for LLMs with YaRN</h4>
+                        <p>Extending LLMs context length is an open challange, let's see why it's so important and which are the main approaches to do it...</p>
+                        <a href="link-to-blog-post.html" class="btn btn-sm btn-outline-secondary">Read Blog</a>
+                    </div>
+                    <!-- Image -->
+                    <div class="col-md-4">
+                        <img src="resources/img/reviews/yarn.png" class="img-fluid" alt="Work 1">
+                    </div>
+                </div>
+
+                <!-- Work 3 -->
+                <div class="row mb-5">
+                    <!-- Title & Description -->
+                    <div class="col-md-8">
+                        <h4>📝 Image classification with Bayesian Flow Networks in Python</h4>
+                        <p>Generative models are a powerful class of machine learning models that can learn to generate new, realistic samples from a given distribution...</p>
+                        <a href="link-to-blog-post.html" class="btn btn-sm btn-outline-secondary">Read Blog</a>
+                    </div>
+                    <!-- Image -->
+                    <div class="col-md-4">
+                        <img src="resources/img/reviews/bfn.png" class="img-fluid" alt="Work 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>
+
