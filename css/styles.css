@@ -94,6 +94,24 @@ nav.navbar {
     padding: 0 10px;
 }
 
+.social-media-buttons .btn {
+    color: white; /* Sets the text/icon color to white */
+    border: 2px solid white; /* Optional: sets the border color to white */
+}
+.social-media-buttons .btn:hover {
+    background-color: white; /* Color when hovered */
+    color: #cb444a; /* Change to your desired hover text/icon color */
+}
+
+.social-media-buttons-sec .btn {
+    color: #28a745; /* Sets the text/icon color to #28a745 */
+    border: 2px solid #28a745; /* Optional: sets the border color to #28a745 */
+}
+.social-media-buttons-sec .btn:hover {
+    background-color: #28a745; /* Color when hovered */
+    color: white; /* Change to your desired hover text/icon color */
+}
+
 
 /* Style for Icons */
 [data-theme="dark"] .fa, [data-theme="dark"] .fab, [data-theme="dark"] .fas {
@@ -157,6 +175,24 @@ nav.navbar {
 
 [data-theme="dark"] .navbar-toggler {
     background-color: #737373 !important;
+}
+
+[data-theme="dark"] .social-media-buttons .btn {
+    color: white !important; /* Sets the text/icon color to white */
+    border: 2px solid white !important; /* Optional: sets the border color to white */
+}
+[data-theme="dark"] .social-media-buttons .btn:hover {
+    background-color: white !important; /* Color when hovered */
+    color: #cb444a !important; /* Change to your desired hover text/icon color */
+}
+
+[data-theme="dark"] .social-media-buttons-sec .btn {
+    color: white !important; /* Sets the text/icon color to #28a745 */
+    border: 2px solid #28a745 !important; /* Optional: sets the border color to #28a745 */
+}
+[data-theme="dark"] .social-media-buttons-sec .btn:hover {
+    background-color: #28a745 !important; /* Color when hovered */
+    color: white !important; /* Change to your desired hover text/icon color */
 }
 
 @media (max-width: 768px) {  /* adjust breakpoint as needed */
