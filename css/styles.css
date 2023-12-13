@@ -112,6 +112,10 @@ nav.navbar {
     color: white; /* Change to your desired hover text/icon color */
 }
 
+#datapizza {
+    color: white; /* Change to your desired hover text/icon color */
+}
+
 
 /* Style for Icons */
 [data-theme="dark"] .fa, [data-theme="dark"] .fab, [data-theme="dark"] .fas {
