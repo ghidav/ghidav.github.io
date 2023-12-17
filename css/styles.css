@@ -55,10 +55,6 @@ nav.navbar {
     height: 300px;
 }
 
-.img-fluid.rounded-circle {
-    max-width: 70%; 
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-}
 
 /* Style for Bio */
 .col-md-7 h2 {
@@ -76,10 +72,11 @@ nav.navbar {
 
 .bio {
     text-align: center;
+	line-height: 1.7;
 }
 
 .my-5 {
-    padding-bottom: 100px;
+    padding-bottom: 10px;
 }
 
 .py-5 .container {
@@ -238,6 +235,12 @@ nav.navbar {
         right: 10px;
         z-index: 1000; /* make sure it's above other content */
     }
+	
+	.img-fluid.rounded-circle {
+    max-width: 70%; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+	
 }
 
 img.img-fluid {
@@ -245,3 +248,48 @@ img.img-fluid {
     height: auto;
 }
 
+p {
+    line-height: 1.7;
+}
+
+@media (max-width: 575px) {  
+html {font-size:14px;}
+	
+p {
+	line-height: 1.7;
+	font-size: 16px;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	}
+	
+b {
+	font-size: 30px;
+	}	
+	
+ h2, h4 {
+     font-size: 23px;
+	 margin-left: 1rem;
+	 margin-right: 1rem;
+	 margin-bottom: 1rem;
+    }	
+
+.bio {
+        font-size: 16px;
+    }	
+
+.btn, .theme-icon {
+        font-size: 1rem;
+        padding: 10px 5px;
+		margin-left: 15px;
+    }
+	
+	.img-fluid.rounded-circle {
+    max-width: 30%; 
+	max-height: 40%	
+}
+	
+img.img-fluid {
+    height: 100px;
+	align-items: center;
+	margin-top: 30px;
+}
