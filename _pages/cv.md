@@ -1,7 +1,7 @@
 ---
 layout: cv
 #permalink: /cv/
-redirect_to: "/assets/files/cv_phd.pdf"
+redirect_to: "/assets/pdf/cv_phd.pdf"
 title: cv
 nav: true
 nav_order: 5
